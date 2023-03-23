@@ -1,4 +1,6 @@
-This folder contains the following files:
+This project is part of the exam course "Planning and Reasoning" of the master in "Artificial Intelligence and Robotics" at " La Sapienza Università di Roma"
+
+This repository contains the following files:
 - A notebook ("planning_project.ipynb") containing all the code of the project, used to work on the prject
 - 4 python files to run the program from shell:
 	- 'infrastructure_generator.py' to generate a new '.json' file with the infratstructure of the railway
