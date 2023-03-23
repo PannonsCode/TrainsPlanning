@@ -1,0 +1,68 @@
+<!-- form html -->
+<html>
+	
+	<head> 
+		
+		<title> INSERT DATA </title>
+		
+		<p>INSERT THE NAME OF THE TRAIN, ITS INITIAL AND ITS FINAL POSITION</p>
+		
+		<p>RULES:</p>
+		
+		<p>-The name of the train is a single string</p>
+		
+		<p>-The initial and final position can be a station or a middle rail:</p>
+		
+		<p>o If the initial position is a station insert "name_rail", where 'name' is the name of the station
+				and 'rail' is the number of the rail. (Ex. A_1, B_3, Roma_2, ecc.)</p>
+				
+		<p>o If the final position is a station insert only "name", where 'name' is the name of the station.
+				(Ex. A, B, Roma, ecc.)</p>
+				
+		<p>o If the initial and/or final position is a middle rail insert "node1,node2", where 'node1' and 'node2'
+				are the names of the nodes between which the rail is included.</p>
+				
+		<p>-Insert all the trains you want pressing the "ADD" button for each one, a recap is in the text area below</p>
+		
+		<p>-Press the "SUBMIT" button to download the file with inserted data and reset the form</p>
+
+		<script type="module" src="script.js"></script>
+	
+	</head>
+	
+	<body>
+		
+		<div class="input-group mb-3">
+			
+			<span>Train: </span>
+			<input type="text" id="train">
+			
+			<span>Start from: </span>
+			<input type="text" id="from">
+			
+			<span>Arrive to: </span>
+			<input type="text" id="to">
+			
+			<button type="button" id="ADD">ADD</button>
+			
+		</div>
+		
+		<p></p>
+		
+		
+		<div>
+			<label>Inserted data: </label>
+		</div>
+		
+		<div>
+			<textarea id="inserted" name="inserted" rows="6" cols="90" readonly="readonly"></textarea>
+		</div>
+		
+		<div>
+			<button type="button" id="SUBMIT">SUBMIT</button>
+		</div>
+		
+	</body>
+	
+</html>
+
